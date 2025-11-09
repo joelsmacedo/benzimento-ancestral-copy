@@ -20,32 +20,30 @@ export const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="container relative z-10 px-4 py-20">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+      <div className="container relative z-10 px-4 py-20 lg:py-32">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Column - Text Content */}
-          <div>
-            <div className="flex justify-start mb-6">
-              <div className="px-4 py-2 bg-primary/10 rounded-full border border-primary/20">
-                <p className="text-sm font-medium text-primary">Com Prof. Laércio Fonseca</p>
-              </div>
+          <div className="space-y-6">
+            <div className="inline-block px-4 py-2 bg-primary/10 rounded-full border border-primary/20">
+              <p className="text-sm font-medium text-primary">Com Prof. Laércio Fonseca</p>
             </div>
             
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               A Arte Ancestral do Benzimento
               <span className="block mt-2 text-primary">ao Seu Alcance</span>
             </h1>
             
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
               Resgate um poder que está desaparecendo. Aprenda as técnicas simples do folclore brasileiro 
               para <strong className="text-foreground">cura, proteção e limpeza energética</strong>. 
               Uma sabedoria que não pode morrer.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 mb-8">
+            <div className="flex flex-col sm:flex-row gap-4 pt-2">
               <Button 
                 onClick={scrollToOffer}
                 size="lg" 
-                className="gradient-hero text-lg font-semibold shadow-medium hover:shadow-strong transition-smooth group"
+                className="gradient-hero text-base font-semibold shadow-medium hover:shadow-strong transition-smooth group"
               >
                 Quero Resgatar Esta Arte Agora
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-smooth" />
@@ -54,13 +52,13 @@ export const HeroSection = () => {
                 variant="outline" 
                 size="lg"
                 onClick={() => document.getElementById('modules')?.scrollIntoView({ behavior: 'smooth' })}
-                className="text-lg border-2 hover:bg-primary/5"
+                className="text-base border-2 hover:bg-primary/5"
               >
                 Conhecer o Curso
               </Button>
             </div>
 
-            <div className="flex flex-wrap gap-6 text-sm text-muted-foreground">
+            <div className="flex flex-wrap gap-6 text-sm text-muted-foreground pt-2">
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-primary"></div>
                 5 Aulas Completas
@@ -77,7 +75,7 @@ export const HeroSection = () => {
           </div>
 
           {/* Right Column - Video */}
-          <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-strong border border-border/20">
+          <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-strong border-2 border-border/20 lg:ml-8">
             <iframe
               className="absolute inset-0 w-full h-full"
               src="https://www.youtube.com/embed/XQM8BaYZ4Uo"
