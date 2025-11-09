@@ -22,8 +22,10 @@ export const HeroSection = () => {
       {/* Content */}
       <div className="container relative z-10 px-4 py-20">
         <div className="max-w-3xl">
-          <div className="inline-block mb-6 px-4 py-2 bg-primary/10 rounded-full border border-primary/20">
-            <p className="text-sm font-medium text-primary">Com Prof. Laércio Fonseca</p>
+          <div className="flex justify-center mb-6">
+            <div className="px-4 py-2 bg-primary/10 rounded-full border border-primary/20">
+              <p className="text-sm font-medium text-primary">Com Prof. Laércio Fonseca</p>
+            </div>
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
