@@ -74,12 +74,18 @@ export const CTASection = () => {
             </div>
 
             <Button 
-              onClick={handleEnroll}
               size="lg" 
               className="w-full gradient-hero text-xl font-bold py-8 shadow-medium hover:shadow-strong transition-smooth group"
+              asChild
             >
-              Quero Resgatar Esta Arte Agora
-              <ArrowRight className="ml-2 h-6 w-6 group-hover:translate-x-1 transition-smooth" />
+              <a 
+                href="https://pay.hotmart.com/G68665723X?sck=HOTMART_PRODUCT_PAGE&off=33xfqa9u&hotfeature=32&bid=1762692454856"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Quero Resgatar Esta Arte Agora
+                <ArrowRight className="ml-2 h-6 w-6 group-hover:translate-x-1 transition-smooth" />
+              </a>
             </Button>
 
             <p className="text-center text-sm text-muted-foreground mt-6">
