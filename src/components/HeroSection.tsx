@@ -41,12 +41,18 @@ export const HeroSection = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
               <Button 
-                onClick={scrollToOffer}
                 size="lg" 
                 className="gradient-hero text-base font-semibold shadow-medium hover:shadow-strong transition-smooth group"
+                asChild
               >
-                Quero Resgatar Esta Arte Agora
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-smooth" />
+                <a 
+                  href="https://pay.hotmart.com/G68665723X?sck=HOTMART_PRODUCT_PAGE&off=33xfqa9u&hotfeature=32&bid=1762692454856"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Quero Resgatar Esta Arte Agora
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-smooth" />
+                </a>
               </Button>
               <Button 
                 variant="outline" 
