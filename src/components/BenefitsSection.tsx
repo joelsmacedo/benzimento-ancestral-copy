@@ -1,4 +1,4 @@
-import { Award, Smartphone, Clock, CheckCircle2 } from "lucide-react";
+import { Award, Smartphone, Clock, CheckCircle2, Check } from "lucide-react";
 const benefits = [{
   icon: Award,
   title: "Certificado de Conclusão",
@@ -42,10 +42,20 @@ export const BenefitsSection = () => {
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="flex-1">
               <h3 className="text-3xl font-bold mb-4">Acesso Completo e Vitalício</h3>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                Este conhecimento ancestral estará sempre com você. Revisite as aulas quando precisar, 
-                pratique no seu tempo e evolua constantemente como benzedor.
-              </p>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-3">
+                  <Check className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-lg text-muted-foreground">Este conhecimento ancestral estará sempre com você.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-lg text-muted-foreground">Revisite as aulas quando precisar</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-lg text-muted-foreground">Pratique no seu tempo e evolua constantemente como benzedor.</span>
+                </li>
+              </ul>
               
             </div>
             <div className="flex-shrink-0">
