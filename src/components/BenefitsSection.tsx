@@ -1,31 +1,23 @@
 import { Award, Smartphone, Clock, CheckCircle2 } from "lucide-react";
-
-const benefits = [
-  {
-    icon: Award,
-    title: "Certificado de Conclusão",
-    description: "Reconheça oficialmente sua jornada e dedicação ao aprendizado da arte do benzimento."
-  },
-  {
-    icon: Smartphone,
-    title: "Estude de Qualquer Dispositivo",
-    description: "Acesso vitalício no celular, tablet ou computador. Aprenda onde e quando quiser."
-  },
-  {
-    icon: Clock,
-    title: "No Seu Próprio Ritmo",
-    description: "Sem pressa, sem pressão. Assista quantas vezes precisar, para sempre."
-  },
-  {
-    icon: CheckCircle2,
-    title: "5 Aulas Diretas ao Ponto",
-    description: "Da teoria à prática avançada, sem enrolação. Conteúdo objetivo e completo."
-  }
-];
-
+const benefits = [{
+  icon: Award,
+  title: "Certificado de Conclusão",
+  description: "Reconheça oficialmente sua jornada e dedicação ao aprendizado da arte do benzimento."
+}, {
+  icon: Smartphone,
+  title: "Estude de Qualquer Dispositivo",
+  description: "Acesso vitalício no celular, tablet ou computador. Aprenda onde e quando quiser."
+}, {
+  icon: Clock,
+  title: "No Seu Próprio Ritmo",
+  description: "Sem pressa, sem pressão. Assista quantas vezes precisar, para sempre."
+}, {
+  icon: CheckCircle2,
+  title: "5 Aulas Diretas ao Ponto",
+  description: "Da teoria à prática avançada, sem enrolação. Conteúdo objetivo e completo."
+}];
 export const BenefitsSection = () => {
-  return (
-    <section className="py-20 px-4 bg-muted/30">
+  return <section className="py-20 px-4 bg-muted/30">
       <div className="container max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -37,18 +29,13 @@ export const BenefitsSection = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {benefits.map((benefit, index) => (
-            <div 
-              key={index}
-              className="bg-card p-6 rounded-2xl shadow-soft border border-border hover:shadow-medium transition-smooth"
-            >
+          {benefits.map((benefit, index) => <div key={index} className="bg-card p-6 rounded-2xl shadow-soft border border-border hover:shadow-medium transition-smooth">
               <div className="w-14 h-14 rounded-xl gradient-accent flex items-center justify-center mb-4 shadow-soft">
                 <benefit.icon className="w-7 h-7 text-background" />
               </div>
               <h3 className="text-xl font-bold mb-3">{benefit.title}</h3>
               <p className="text-muted-foreground leading-relaxed">{benefit.description}</p>
-            </div>
-          ))}
+            </div>)}
         </div>
 
         <div className="mt-16 bg-gradient-to-br from-primary/10 to-accent/10 border-2 border-primary/20 rounded-2xl p-8 md:p-12">
@@ -59,20 +46,7 @@ export const BenefitsSection = () => {
                 Este conhecimento ancestral estará sempre com você. Revisite as aulas quando precisar, 
                 pratique no seu tempo e evolua constantemente como benzedor.
               </p>
-              <ul className="space-y-2">
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span>Sem mensalidades ou taxas recorrentes</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span>Atualizações futuras incluídas</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span>Suporte dedicado</span>
-                </li>
-              </ul>
+              
             </div>
             <div className="flex-shrink-0">
               <div className="w-40 h-40 rounded-full gradient-hero flex items-center justify-center shadow-strong">
@@ -82,6 +56,5 @@ export const BenefitsSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
