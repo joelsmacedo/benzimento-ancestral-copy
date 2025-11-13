@@ -84,7 +84,7 @@ export const HeroSection = () => {
           <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-strong border-2 border-border/20 lg:ml-8">
             <iframe
               className="absolute inset-0 w-full h-full"
-              src="https://www.youtube.com/embed/XQM8BaYZ4Uo"
+              src="https://www.youtube.com/embed/5JWDysQpBug"
               title="Curso de Benzimento - Prof. Laércio Fonseca"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
