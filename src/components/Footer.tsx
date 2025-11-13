@@ -3,7 +3,7 @@ export const Footer = () => {
     <footer className="py-12 px-4 bg-foreground text-background">
       <div className="container max-w-6xl">
         <div className="text-center space-y-4">
-          <h3 className="text-2xl font-bold">Curso de Benzimento</h3>
+          <h3 className="text-2xl font-bold">Curso de Benzimento (Afiliado Oficial)</h3>
           <p className="text-background/80">
             Prof. Laércio Fonseca - Resgatando a Arte Ancestral de Cura
           </p>
