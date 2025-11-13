@@ -81,7 +81,7 @@ export const HeroSection = () => {
           </div>
 
           {/* Right Column - Video */}
-          <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-strong border-2 border-primary/30 lg:ml-8" style={{ boxShadow: '0 0 30px hsl(var(--primary) / 0.4), 0 0 60px hsl(var(--primary) / 0.2)' }}>
+          <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-strong border-2 border-primary/50 lg:ml-8" style={{ boxShadow: '0 0 40px hsl(var(--primary) / 0.6), 0 0 80px hsl(var(--primary) / 0.3), 0 0 120px hsl(var(--primary) / 0.15)' }}>
             <iframe
               className="absolute inset-0 w-full h-full"
               src="https://www.youtube.com/embed/5JWDysQpBug"
