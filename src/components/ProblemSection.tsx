@@ -25,7 +25,9 @@ export const ProblemSection = () => {
           </div>
 
           <div className="bg-card p-8 rounded-2xl shadow-soft border border-border">
-            <h3 className="text-2xl font-bold mb-4 text-secondary">Males que Você Não Sabe Como Tratar</h3>
+            <h3 className="text-2xl font-bold mb-4 text-secondary">Males Que Você Pode Tratar
+
+            </h3>
             <ul className="space-y-3 text-muted-foreground">
               <li className="flex items-start gap-3">
                 <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
@@ -59,6 +61,4 @@ export const ProblemSection = () => {
           <p className="text-center mt-4 text-muted-foreground font-medium">— Prof. Laércio Fonseca</p>
         </div>
       </div>
-    </section>);
-
-};
+    </section>);};
