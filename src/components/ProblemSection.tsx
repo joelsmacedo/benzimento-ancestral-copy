@@ -17,10 +17,10 @@ export const ProblemSection = () => {
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <div className="bg-card p-8 rounded-2xl shadow-soft border border-border">
             <h3 className="text-2xl font-bold mb-4 text-secondary">Uma Sabedoria que Está Desaparecendo</h3>
-            <p className="text-muted-foreground leading-relaxed">
-              Antigamente, em cada comunidade havia benzedeiros e benzedeiras que carregavam essa sabedoria ancestral, 
-              passada de geração em geração. Hoje, essa arte está se extinguindo, levando consigo um conhecimento 
-              precioso de cura e proteção espiritual que a humanidade não pode perder.
+            <p className="text-muted-foreground leading-relaxed">Antigamente, em cada comunidade havia benzedeiros e benzedeiras que carregavam essa sabedoria ancestral, passada de geração em geração. Hoje, essa arte está se extinguindo, levando consigo um conhecimento precioso de cura e proteção espiritual.
+
+
+
             </p>
           </div>
 
@@ -59,6 +59,6 @@ export const ProblemSection = () => {
           <p className="text-center mt-4 text-muted-foreground font-medium">— Prof. Laércio Fonseca</p>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
