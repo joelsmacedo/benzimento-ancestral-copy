@@ -2,7 +2,7 @@ import { Award, Smartphone, Clock, CheckCircle2, Check } from "lucide-react";
 const benefits = [{
   icon: Award,
   title: "Certificado de Conclusão",
-  description: "Reconheça oficialmente sua jornada e dedicação ao aprendizado da arte do benzimento."
+  description: "Seja reconhecido oficialmente sua jornada e dedicação ao aprendizado da arte do benzimento."
 }, {
   icon: Smartphone,
   title: "Estude de Qualquer Dispositivo",
