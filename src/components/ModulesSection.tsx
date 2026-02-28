@@ -27,7 +27,7 @@ const modules = [
     number: "04",
     icon: Home,
     title: "Benzimentos de Casas, Veículos, Plantas e Animais",
-    description: "Expanda sua prática além das pessoas. Aprenda técnicas específicas para benzer casas, ambientes de trabalho, plantas e animais. Técnicas simples e objetivas para se tornar um benzedor completo.",
+    description: "Expanda sua prática além de pessoas. Aprenda técnicas específicas para benzer casas, ambientes de trabalho, plantas e animais. Técnicas simples e objetivas para se tornar um benzedor completo.",
     highlights: ["Limpeza de ambientes", "Proteção de veículos", "Harmonização de animais e plantas"]
   },
   {
