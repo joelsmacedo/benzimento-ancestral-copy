@@ -38,7 +38,7 @@ export const SolutionSection = () => {
             </p>
 
             <div className="bg-primary/10 border border-primary/30 rounded-xl p-6 mt-8">
-              <h3 className="text-xl font-bold mb-3 text-primary">Você Vai Aprender:</h3>
+              <h3 className="text-xl font-bold mb-3 text-primary">Domine na Prática:</h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
