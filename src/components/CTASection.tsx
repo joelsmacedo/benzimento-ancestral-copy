@@ -83,7 +83,7 @@ export const CTASection = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Quero Resgatar Esta Arte Agora
+                Quero Resgatar Esta Arte
                 <ArrowRight className="ml-2 h-6 w-6 group-hover:translate-x-1 transition-smooth" />
               </a>
             </Button>
