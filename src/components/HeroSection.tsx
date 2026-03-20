@@ -34,8 +34,8 @@ export const HeroSection = () => {
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Resgate um poder que está desaparecendo. Aprenda as técnicas simples do folclore brasileiro 
-              para <strong className="text-foreground">cura, proteção e limpeza energética</strong>. 
+              Resgate um poder que está desaparecendo. Aprenda técnicas simples, porém extremamente eficazes, da arte dos benzimentos para{' '}
+              <strong className="text-foreground">cura, proteção e limpeza energética</strong>.{' '}
               Uma sabedoria que não pode morrer.
             </p>
 
