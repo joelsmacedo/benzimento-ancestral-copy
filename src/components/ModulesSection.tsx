@@ -48,7 +48,7 @@ export const ModulesSection = () => {
             <p className="text-sm font-semibold text-accent uppercase tracking-wider">Conteúdo Programático</p>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            O Que Você Vai Aprender
+            Domine na Prática
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             5 aulas completas que vão da teoria profunda à prática avançada, 
