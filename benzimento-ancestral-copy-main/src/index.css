@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Cores Base - Espiritualidade e Natureza */
+    --background: 40 30% 97%;
+    --foreground: 25 35% 20%;
+
+    --card: 40 35% 99%;
+    --card-foreground: 25 35% 20%;
+
+    --popover: 40 35% 99%;
+    --popover-foreground: 25 35% 20%;
+
+    /* Primary - Verde Sálvia (Cura, Conexão) */
+    --primary: 150 30% 45%;
+    --primary-foreground: 40 35% 99%;
+    --primary-glow: 150 40% 65%;
+
+    /* Secondary - Terracota (Tradição, Terra) */
+    --secondary: 15 45% 60%;
+    --secondary-foreground: 40 35% 99%;
+
+    /* Accent - Dourado (Sabedoria, Luz) */
+    --accent: 45 80% 55%;
+    --accent-foreground: 25 35% 20%;
+
+    --muted: 40 25% 92%;
+    --muted-foreground: 25 20% 45%;
+
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 40 35% 99%;
+
+    --border: 40 20% 88%;
+    --input: 40 20% 88%;
+    --ring: 150 30% 45%;
+
+    --radius: 0.75rem;
+
+    /* Gradientes */
+    --gradient-hero: linear-gradient(135deg, hsl(150 35% 40%), hsl(150 45% 55%));
+    --gradient-accent: linear-gradient(90deg, hsl(45 80% 55%), hsl(35 75% 60%));
+    --gradient-subtle: linear-gradient(180deg, hsl(40 30% 97%), hsl(150 20% 95%));
+
+    /* Sombras */
+    --shadow-soft: 0 4px 20px hsla(150 30% 45% / 0.1);
+    --shadow-medium: 0 8px 30px hsla(150 30% 45% / 0.15);
+    --shadow-strong: 0 12px 40px hsla(25 35% 20% / 0.2);
+
+    /* Transições */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 25 25% 12%;
+    --foreground: 40 30% 95%;
+
+    --card: 25 25% 15%;
+    --card-foreground: 40 30% 95%;
+
+    --popover: 25 25% 15%;
+    --popover-foreground: 40 30% 95%;
+
+    --primary: 150 35% 50%;
+    --primary-foreground: 40 30% 97%;
+    --primary-glow: 150 45% 70%;
+
+    --secondary: 15 40% 50%;
+    --secondary-foreground: 40 30% 97%;
+
+    --accent: 45 75% 60%;
+    --accent-foreground: 25 25% 12%;
+
+    --muted: 25 20% 20%;
+    --muted-foreground: 40 15% 60%;
+
+    --destructive: 0 65% 50%;
+    --destructive-foreground: 40 30% 97%;
+
+    --border: 25 20% 25%;
+    --input: 25 20% 25%;
+    --ring: 150 35% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+
+  .gradient-subtle {
+    background: var(--gradient-subtle);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-medium {
+    box-shadow: var(--shadow-medium);
+  }
+
+  .shadow-strong {
+    box-shadow: var(--shadow-strong);
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+}
