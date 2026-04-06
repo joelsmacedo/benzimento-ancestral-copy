@@ -79,7 +79,7 @@ export const CTASection = () => {
               asChild
             >
               <a 
-                href="https://pay.hotmart.com/G68665723X?sck=HOTMART_PRODUCT_PAGE&off=33xfqa9u&hotfeature=32&bid=1762692454856"
+                href="https://pay.hotmart.com/G68665723X?off=33xfqa9u&sck=IG_BIO_PROD1&utm_source=instagram&utm_medium=bio&utm_campaign=benzimentos"
                 target="_blank"
                 rel="noopener noreferrer"
               >

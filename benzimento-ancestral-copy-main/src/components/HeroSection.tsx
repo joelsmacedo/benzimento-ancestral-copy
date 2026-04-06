@@ -1,8 +1,23 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Maximize } from "lucide-react";
 import heroImage from "@/assets/hero-benzimento.jpg";
+import { useRef } from "react";
 
 export const HeroSection = () => {
+  const videoContainerRef = useRef<HTMLDivElement>(null);
+
+  const toggleFullscreen = () => {
+    if (!document.fullscreenElement) {
+      videoContainerRef.current?.requestFullscreen().catch(err => {
+        console.error(`Error attempting to enable fullscreen: ${err.message}`);
+      });
+    } else {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      }
+    }
+  };
+
   const scrollToOffer = () => {
     document.getElementById('offer')?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -46,7 +61,7 @@ export const HeroSection = () => {
                 asChild
               >
                 <a 
-                  href="https://pay.hotmart.com/G68665723X?sck=HOTMART_PRODUCT_PAGE&off=33xfqa9u&hotfeature=32&bid=1762692454856"
+                  href="https://pay.hotmart.com/G68665723X?off=33xfqa9u&sck=IG_BIO_PROD1&utm_source=instagram&utm_medium=bio&utm_campaign=benzimentos"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -81,14 +96,29 @@ export const HeroSection = () => {
           </div>
 
           {/* Right Column - Video */}
-          <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-strong border-2 border-primary/50 lg:ml-8" style={{ boxShadow: '0 0 40px hsl(var(--primary) / 0.6), 0 0 80px hsl(var(--primary) / 0.3), 0 0 120px hsl(var(--primary) / 0.15)' }}>
+          <div ref={videoContainerRef} className="relative w-full aspect-video rounded-xl overflow-hidden shadow-strong border-2 border-primary/50 lg:ml-8 bg-black" style={{ boxShadow: '0 0 40px hsl(var(--primary) / 0.6), 0 0 80px hsl(var(--primary) / 0.3), 0 0 120px hsl(var(--primary) / 0.15)' }}>
+            {/* Transparent overlays to block YouTube branding on all edges */}
+            <div className="absolute top-0 left-0 right-0 h-1/4 z-10"></div>
+            <div className="absolute bottom-0 left-0 right-0 h-1/4 z-10"></div>
+            <div className="absolute top-0 left-0 bottom-0 w-1/4 z-10"></div>
+            <div className="absolute top-0 right-0 bottom-0 w-1/4 z-10"></div>
+            
             <iframe
               className="absolute inset-0 w-full h-full"
-              src="https://www.youtube.com/embed/5JWDysQpBug"
+              src="https://www.youtube.com/embed/5JWDysQpBug?controls=0&rel=0&modestbranding=1"
               title="Curso de Benzimento - Prof. Laércio Fonseca"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
+
+            {/* Fullscreen Button */}
+            <button 
+              onClick={toggleFullscreen}
+              className="absolute bottom-4 right-4 z-20 p-2 bg-black/60 hover:bg-black/90 rounded-lg text-white/90 hover:text-white transition-all backdrop-blur-sm border border-white/10 shadow-lg"
+              title="Tela Inteira"
+            >
+              <Maximize size={24} />
+            </button>
           </div>
         </div>
       </div>
