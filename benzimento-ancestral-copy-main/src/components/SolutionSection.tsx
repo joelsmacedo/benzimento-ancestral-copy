@@ -1,6 +1,5 @@
 import { Sparkles } from "lucide-react";
-import knowledgeIcon from "@/assets/icon-knowledge.jpg";
-
+import knowledgeIcon from "@/assets/icon-new-knowledge.jpg";
 export const SolutionSection = () => {
   return (
     <section className="py-20 px-4 bg-gradient-subtle">
@@ -20,7 +19,7 @@ export const SolutionSection = () => {
             <img 
               src={knowledgeIcon} 
               alt="Conhecimento Ancestral" 
-              className="w-full max-w-md mx-auto rounded-2xl shadow-medium"
+              className="w-full max-w-md mx-auto rounded-2xl shadow-medium object-cover"
             />
           </div>
 
